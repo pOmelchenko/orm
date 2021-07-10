@@ -1,0 +1,15 @@
+{
+    "require": {
+        "php": "^8.0",
+        "ext-pdo": "*",
+        "spatie/ray": "^1.22"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
