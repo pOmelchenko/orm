@@ -16,14 +16,6 @@ class User
         // ..
     }
 
-    public static function map($id, $name)
-    {
-        return new self (
-            new Id($id),
-            new Name($name),
-        );
-    }
-
     /**
      * @return Id
      */
