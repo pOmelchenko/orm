@@ -20,7 +20,7 @@ class User
         $this->entityManager = new PDO('mysql:host=localhost;dbname=test', $user, $pass);
     }
 
-    public function getUserById(Id $id): Entity\User
+    public function getById(Id $id): Entity\User
     {
         $sth = $this->entityManager->prepare('SELECT id, name FROM test.users WHERE id = :id');
 

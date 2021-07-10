@@ -1,11 +1,11 @@
 <?php
 
-use App\Repository\User;
+use App\Repository;
 use App\ValueObject\Id;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$repository = new User();
-$user = $repository->getUserById(new Id('asd'));
+$repository = new Repository\User();
+$user = $repository->getById(new Id('asd'));
 
 dd($user);
